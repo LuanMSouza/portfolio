@@ -1,4 +1,3 @@
-// src/components/Stack.tsx
 
 export default function Stack() {
     const technologies = [

@@ -3,10 +3,6 @@ import Link from "next/link";
 export default function TopBar() {
     return (
         <header className="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4">
-            {/* Ajustes Mobile: 
-          - h-16 no mobile, h-20 no desktop
-          - px-4 no mobile, px-8 no desktop 
-      */}
             <div className="relative flex h-16 md:h-20 w-full max-w-6xl items-center justify-between overflow-hidden rounded-2xl bg-brand-metal px-4 md:px-8 ring-1 ring-white/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)]">
 
                 <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.05)_50%,transparent_75%)] bg-[length:4px_4px]" />

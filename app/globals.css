@@ -5,7 +5,6 @@
   --color-brand-metal: #111111;
   --color-neon-blue: #00f2fe;
   --color-neon-yellow: #ffbf00;
-  /* Na v4, usamos o prefixo --background-image para imagens/gradientes */
   --background-image-radial-nebula: radial-gradient(circle at center, #063842, #021217);
 }
 

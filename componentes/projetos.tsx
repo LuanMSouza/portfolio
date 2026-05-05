@@ -10,7 +10,7 @@ export default function Projetos() {
             tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind"],
             link: "https://zentrax.dvls.com.br",
             featured: true,
-            image: "/projetos/zentrax.webP",
+            image: "/projetos/zentrax.webp",
         },
         {
             title: "EG Personalizados",
@@ -19,7 +19,7 @@ export default function Projetos() {
             tech: ["Next.js", "Node.js", "Tailwind", "PostgreSQL"],
             link: "https://egpersonalizados.com.br",
             featured: true,
-            image: "/projetos/egp.webP",
+            image: "/projetos/egp.webp",
         },
         {
             title: "Zentro",
@@ -28,7 +28,7 @@ export default function Projetos() {
             tech: ["Next.js", "Node.js", "Tailwind", "PostgreSQL"],
             link: "https://zentro.dvls.com.br",
             featured: false,
-            image: "/projetos/zentro.webP",
+            image: "/projetos/zentro.webp",
         },
         {
             title: "Maresia Bebidas",
@@ -37,7 +37,7 @@ export default function Projetos() {
             tech: ["React", "Next.js"],
             link: "https://maresia-bebidas.com",
             featured: false,
-            image: "/projetos/maresia.webP",
+            image: "/projetos/maresia.webp",
 
         }
     ];
