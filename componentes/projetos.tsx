@@ -66,7 +66,7 @@ export default function Projetos() {
                                 }`}
                         >
                             {/* Efeito de Glow no Hover */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute inset-0 bg-linear-to-br from-neon-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
                             {/* Lado do Conteúdo */}
                             <div className="relative z-10 flex flex-col justify-between flex-1">
@@ -94,12 +94,13 @@ export default function Projetos() {
                             <div className={`relative z-10 bg-black/40 rounded-xl border border-white/5 overflow-hidden ${project.featured ? "w-full md:w-1/2 aspect-video" : "w-full aspect-video mt-6"
                                 }`}>
                                 {/* Overlay de brilho para simular reflexo no vidro */}
-                                <div className="absolute inset-0 z-20 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
+                                <div className="absolute inset-0 z-20 bg-linear-to-tr from-white/5 to-transparent pointer-events-none" />
 
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
+                                    priority
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />

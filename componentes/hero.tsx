@@ -1,28 +1,11 @@
-"use client";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Hero() {
-    const [isVisible, setIsVisible] = useState(true);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
         <section id="hero" className="relative flex min-h-screen w-full flex-col items-center justify-center pt-24 md:pt-20 overflow-hidden">
 
             {/* DECORAÇÃO - Ajustada para não vazar tanto no mobile */}
-            <div className="absolute top-1/4 left-1/4 h-64 md:h-96 w-64 md:w-96 bg-neon-blue/10 blur-[100px] md:blur-[120px] pointer-events-none animate-pulse" />
+            <div className="absolute top-1/4 left-1/4 h-64 md:h-96 w-64 md:w-96 bg-neon-blue/10 blur-[100px] md:blur-[120px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 h-64 md:h-96 w-64 md:w-96 bg-neon-yellow/5 blur-[100px] md:blur-[120px] pointer-events-none" />
 
             <div className="z-10 flex flex-col items-center text-center px-6 md:px-4">
@@ -64,14 +47,6 @@ export default function Hero() {
                         Ver Experiência
                     </Link>
                 </div>
-            </div>
-
-            {/* Scroll Indicator - Escondido em telas muito pequenas para não encavalar */}
-            <div
-                className={`absolute bottom-5 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"}`}
-            >
-                <span className="text-[10px] font-bold tracking-[0.3em] text-gray-600 uppercase">Scroll</span>
-                <div className="h-12 w-[1px] bg-gradient-to-b from-neon-blue via-neon-blue/20 to-transparent" />
             </div>
 
         </section>

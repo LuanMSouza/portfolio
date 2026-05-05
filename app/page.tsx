@@ -1,10 +1,12 @@
 "use client";
 
-import Contact from "@/componentes/contato";
-import Hero from "@/componentes/hero";
-import Projetos from "@/componentes/projetos";
-import Stack from "@/componentes/stack";
+import dynamic from 'next/dynamic';
 import TopBar from "@/componentes/topBar";
+import Hero from "@/componentes/hero";
+
+const Projetos = dynamic(() => import("@/componentes/projetos"));
+const Stack = dynamic(() => import("@/componentes/stack"));
+const Contact = dynamic(() => import("@/componentes/contato"));
 
 export default function Home() {
 
